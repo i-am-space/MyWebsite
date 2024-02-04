@@ -14,7 +14,7 @@ function typeText(){
 
 let luigiCount=0;
 function luigi(){
-    document.getElementById('luigi').addEventListener('click', function(){
+    document.getElementById('luigi-button').addEventListener('click', function(){
         luigiCount++;
         if (luigiCount<14){
             var luigiPic = document.createElement("img");
