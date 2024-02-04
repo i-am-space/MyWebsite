@@ -1,0 +1,158 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'codey';
+    src: url("Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format('woff2');
+}
+
+:root {
+    --primary-colour: #000000;
+    --secondary-colour: #ffffff;
+    --right-col-colour: #838383;
+}
+
+.light-theme {
+    --primary-colour: #ffffff;
+    --secondary-colour: #000000;
+    --right-col-colour: #d3d3d3;
+}
+
+#mode {
+    margin-right: 1.042vw;
+    color: #ffffff;
+    position: absolute;
+    top: 1.389vh;
+    left: 1.042vw;
+    cursor: pointer;
+    width: 2.083vw;
+    height: 2.083vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-colour);
+    font-family: 'codey','Courier New', Courier, monospace;
+    color: var(--secondary-colour);
+}
+
+.content {
+    flex: 5;
+    display: flex;
+    font-family: 'codey','Courier New', Courier, monospace;
+    color: var(--secondary-colour);
+    margin-left: 2.083vw;
+    margin-right: 2.604vw;
+    line-height: 2.083vw;
+    font-size: 1.389vw;
+    overflow-y: auto; 
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-colour) var(--primary-colour);
+}
+
+#blog-header {
+    flex: 1;
+    font-size: 4.646vw;
+    font-weight: 100;
+    margin-left: 2.083vw;
+    margin-right: 86.031vw;
+    padding-left: 0.578vw;
+    padding-right: 0.578vw;
+    border-color: var(--secondary-colour);
+    border-style: double;
+    height: 8.333vh;
+    border-width: 0.463vh;
+    overflow: hidden;
+    border-radius: 2.778vw;
+}
+
+.post, .post2 {
+    flex: 1;
+    background-color: var(--primary-colour);
+    padding: 1.389vw;
+    margin-bottom: 1.389vw;
+    border-right-width: 0.194vw;
+    border-right-style: dashed;
+    border-right-color: var(--secondary-colour);
+}
+.post2{
+    border-style: hidden;
+}
+
+.actions, .actions2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.694vw;
+}
+
+.like-btn, .like-btn2 {
+    font-family: 'codey','Courier New', Courier, monospace;
+    padding: 0.347vw 0.694vw;
+    margin-right: 0.694vw;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.347vw;
+}
+
+.like-count, .like-count2 {
+    font-family: 'codey','Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.comments, .comments2 {
+    font-family: 'codey','Courier New', Courier, monospace;
+    margin-top: 1.389vw;
+}
+
+.comments h3, .comments2 h3 {
+    font-family: 'codey','Courier New', Courier, monospace;
+    margin-bottom: 0.694vw;
+}
+
+.comment-list, .comment-list2 {
+    font-family: 'codey','Courier New', Courier, monospace;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-list li, .comment-list2 li {
+    font-family: 'codey','Courier New', Courier, monospace;
+    margin-bottom: 0.694vw;
+    padding: 0.347vw 0.694vw;
+    background-color: var(--primary-colour);
+    border-radius: 0.347vw;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.submit_button, .submit_button2, #reset-btn {
+    font-family: 'codey','Courier New', Courier, monospace;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
+}
+
+#reset-btn {
+    font-family: 'codey','Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 1.852vh;
+    right: 1.852vw;
+    padding: 0.578vw 1.156vw;
+    font-size: 0.926vw;
+    background-color: rgb(90, 11, 140);
+    color: var(--secondary-colour);
+    border: none;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+
+#reset-btn:hover {
+    background-color: rgb(156, 42, 255);
+}

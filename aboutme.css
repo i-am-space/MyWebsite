@@ -1,0 +1,191 @@
+/* Add your CSS styles here */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-colour: #000000;
+  --secondary-colour: #ffffff;
+  --right-col-colour: #252525;
+}
+
+.light-theme {
+  --primary-colour: #ffffff;
+  --secondary-colour: #000000;
+  --right-col-colour: #d3d3d3;
+}
+
+#mode {
+  margin-right: 2.66667vw;
+  color: #ffffff;
+  position: absolute;
+  top: 1.5vh;
+  left: 1.5vw;
+  cursor: pointer;
+  width: 3vw;
+  height: 4vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: var(--primary-colour);
+  font-family: 'codey', 'Courier New', Courier, monospace;
+  color: var(--secondary-colour);
+}
+
+.left-column {
+  flex: 2;
+  height: 100%;
+  background-color: var(--primary-colour);
+  text-align: center;
+}
+
+.right-column {
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  background-color: var(--right-col-colour);
+  height: 100%;
+  align-self: flex-end;
+}
+
+.profile-pic{
+  flex:1.4;
+  align-items: center;
+}
+.pfp{
+  display:flex;
+  width: 16vw;
+  height:20vw;
+}
+.about{
+  flex:1;
+  margin-left: 1.6vw;
+  margin-right: 1.6vw;
+  line-height: 4vh;
+  font-size:1.5vw;
+}
+
+@font-face {
+  font-family: 'codey';
+  src: url("Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format('woff2');
+}
+
+#cursor {
+  font-family: 'codey', 'Courier New', Courier, monospace;
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'codey', 'Courier New', Courier, monospace;
+  color: var(--secondary-colour);
+  font-size: 5vw;
+  font-weight: 100;
+  font-stretch: ultra-condensed;
+  margin-right: 13.3333vw;
+  margin-left: 6.66667vw;
+  border-color: var(--secondary-colour);
+  border-style: double;
+  align-self: center;
+  border-width: 5px;
+  height: 20vh;
+  overflow: hidden;
+  border-radius: 3vh;
+  padding:1.4vh;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.33333vw;
+  margin-top: 2vh;
+  margin-right: 13.3333vw;
+  margin-left: 6.66667vw;
+  text-align: center;
+}
+
+.buttSecs {
+  font-family: 'codey', 'Courier New', Courier, monospace;
+  font-size: 3vw;
+  color: var(--secondary-colour);
+  background-color: var(--primary-colour);
+  border: 5px double var(--secondary-colour);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  text-decoration: none;
+  border-radius: 2vh;
+}
+
+.buttSecs:hover {
+  background-color: var(--right-col-colour);
+}
+
+#luigi-holder {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 5.5vh;
+}
+
+#luigi {
+  flex:0.03;
+}
+
+#luigi-button{
+  font-family: 'codey', 'Courier New', Courier, monospace;
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  padding: 1vh 2vw;
+  font-size: 1.06667vw;
+  background-color: rgb(69, 178, 69);
+  color: var(--secondary-colour);
+  border: none;
+  cursor: pointer;
+  border-radius: 1vh;
+}
+
+#luigi-button:hover {
+  background-color: #1bc800;
+}
+
+.luigiPic {
+  display: flex;
+  /* flex:1; */
+  width: 2vw;
+  height: 3vh;
+  margin: 1vh 0.66667vw;
+}
+
+#social-icons {
+  flex:0.01;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 6.66667vw;
+}
+
+.social-icon {
+  margin-right: 1.33333vw;
+  color: var(--secondary-colour);
+  font-size: 3vw;
+  align-self: flex-end;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}

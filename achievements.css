@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'codey';
+    src: url("Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format('woff2');
+}
+
+:root {
+    --primary-colour: #000000;
+    --secondary-colour: #ffffff;
+    --right-col-colour: #838383;
+}
+
+.light-theme {
+    --primary-colour: #ffffff;
+    --secondary-colour: #000000;
+    --right-col-colour: #d3d3d3;
+}
+
+#mode {
+    margin-right: 1.042vw;
+    color: #ffffff;
+    position: absolute;
+    top: 1.389vh;
+    left: 1.042vw;
+    cursor: pointer;
+    width: 2.083vw;
+    height: 2.083vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-colour);
+    font-family: 'codey','Courier New', Courier, monospace;
+    color: var(--secondary-colour);
+}
+
+.content {
+    flex: 5;
+    display: flex;
+    font-family: 'codey','Courier New', Courier, monospace;
+    color: var(--secondary-colour);
+    margin-left: 2.604vw;
+    margin-right: 2.604vw;
+    line-height: 3.778vh;
+    font-size: 1.315vw;
+}
+
+#ach-header {
+    flex: 1;
+    font-size: 4.646vw;
+    font-weight: 100;
+    margin-left: 2.604vw;
+    margin-right: 63.167vw; /* Adjusted margin-right */
+    padding-left: 0.578vw;
+    padding-right: 0.578vw;
+    border-color: var(--secondary-colour);
+    border-style: double;
+    height: 8.333vh;
+    border-width: 0.463vh;
+    overflow: hidden;
+    border-radius: 2.778vw;
+}
+
+.col1 {
+    flex: 1;
+    color: var(--secondary-colour);
+    font-family: 'codey','Courier New', Courier, monospace;
+    border-color: var(--secondary-colour);
+    /* border-right: 0.26vw dashed; */
+    margin-right: 1.389vw;
+}
+
+#col2 {
+    flex: 0.05;
+}
+
+#bowser {
+    font-family: 'codey', 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 1.852vh;
+    right: 1.852vw;
+    padding: 0.578vw 1.156vw;
+    font-size: 0.926vw;
+    background-color: rgb(255, 193, 0);
+    color: var(--secondary-colour);
+    border: none;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+
+.bowserPic {
+    display: flex;
+    width: 1.389vw;
+    height: 1.389vw;
+    margin: 0.694vw;
+    margin-top: 1.852vh;
+}

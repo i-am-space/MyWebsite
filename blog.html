@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="sun.png" id="mode"></i>
+        <script src="dark_light_mode.js"></script>
+        <h1 id="blog-header"></h1>
+        <div class="content">
+            <script src="comment1.js"></script>
+            <div class="post">
+                <h2>Test Blog 1</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="actions">
+                  <button class="like-btn">Like</button>
+                  <span class="like-count">0</span>
+                  <button id="reset-btn">Reset</button>
+                </div>
+                <div class="comments">
+                  <h3>Comments</h3>
+                  <ul class="comment-list">
+                    <!-- Comments will be dynamically added here -->
+                  </ul>
+                  <form id="comment-form">
+                    <textarea id="comment-text" placeholder="Add a comment"></textarea>
+                    <button type="submit" class="submit_button">Post Comment</button>
+                  </form>
+                </div>
+            </div>
+            <script src="comment2.js"></script>
+            <div class="post2">
+                <h2>Test Blog 2</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="actions2">
+                  <button class="like-btn2">Like</button>
+                  <span class="like-count2">0</span>
+                </div>
+                <div class="comments2">
+                  <h3>Comments</h3>
+                  <ul class="comment-list2">
+                    <!-- Comments will be dynamically added here -->
+                  </ul>
+                  <form id="comment-form2">
+                    <textarea id="comment-text2" placeholder="Add a comment"></textarea>
+                    <button type="submit" class="submit_button2">Post Comment</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
