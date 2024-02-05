@@ -48,7 +48,7 @@ body, html {
     color: var(--secondary-colour);
     margin-left: 2.604vw;
     margin-right: 2.604vw;
-    line-height: 3.778vh;
+    line-height: 2.75vh;
     font-size: 1.315vw;
 }
 
@@ -69,6 +69,15 @@ body, html {
 }
 
 .col1 {
+    flex: 1;
+    color: var(--secondary-colour);
+    font-family: 'codey','Courier New', Courier, monospace;
+    border-color: var(--secondary-colour);
+    /* border-right: 0.26vw dashed; */
+    margin-right: 1.389vw;
+    overflow-y: auto;
+}
+.col3{
     flex: 1;
     color: var(--secondary-colour);
     font-family: 'codey','Courier New', Courier, monospace;

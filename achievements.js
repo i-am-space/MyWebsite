@@ -22,7 +22,7 @@ function bowser(){
             document.getElementById("col2").appendChild(bowserPic);
         }
         else{
-            alert("BOWSER'S GOING THROUGH SOME SHIT RN STOP")
+            alert("BOWSER? I BARELY KNOW HER! (I AM WANTED FOR WAR CRIMES IN VENEZUELA)")
         }
     });
 }
